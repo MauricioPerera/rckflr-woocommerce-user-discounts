@@ -1,3 +1,4 @@
+<?php
 /*
 Plugin Name: Descuentos de Usuario para WooCommerce
 Description: Este plugin permite asignar descuentos personalizados a usuarios en WooCommerce basados en una taxonomía específica. Los descuentos pueden aplicarse tanto a productos simples como a variaciones de productos. Además, se ha añadido una funcionalidad que ajusta el rango de precios mostrado para productos variables basándose en los precios con descuento.
@@ -367,3 +368,4 @@ function custom_variable_price_range($price, $product) {
 }
 add_filter('woocommerce_variable_sale_price_html', 'custom_variable_price_range', 10, 2);
 add_filter('woocommerce_variable_price_html', 'custom_variable_price_range', 10, 2);
+?>
